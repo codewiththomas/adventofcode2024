@@ -13,9 +13,10 @@ foreach (string line in lines)
     secondlist.Add(b);
 }
 
+// SOLUTION FIRST PART
+
 var orderedFirstList = firstlist.OrderBy(x => x).ToArray();
 var orderedSecondList = secondlist.OrderBy(x => x).ToArray();
-
 
 int totalDistance = 0;
 
@@ -27,7 +28,7 @@ for (int i = 0; i < orderedFirstList.Length; i++)
 
 Console.WriteLine("Total distance: " + totalDistance.ToString());
 
-//SECOND PART
+// SOLUTION SECOND PART
 int totalSimilarityScore = 0;
 
 for (int i = 0; i < orderedFirstList.Length; i++)
